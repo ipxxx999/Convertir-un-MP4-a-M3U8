@@ -1,0 +1,40 @@
+
+
+
+C:\
+
+C:\ffmpeg\bin;
+
+
+cmd: ffmpeg -version
+
+
+ffmpeg
+
+-i sample.mp4 ( ruta del video original )
+-profile:v baseline
+-level 3.0
+-s 1200x720 ( Resolucion del Video )
+-start_number 0
+-hls_list_size 0
+-f hls sample.m3u8 ( Ruta del video )
+
+
+ffmpeg -i C:\videos_comber\altared_es.mp4 -profile:v baseline -level 3.0 -s 1200x720 -start_number 0 -hls_list_size 0 -f hls C:\videos_comber\salida_video_altared\altared_es.m3u8
+
+
+
+intro_chuqui_altared.mp4
+
+
+ffmpeg -i C:\videos_comber\intro_chuqui_altared.mp4 -profile:v baseline -level 3.0 -s 1200x720 -start_number 0 -hls_list_size 0 -f hls C:\videos_comber\salida_video_altared\intro_chuqui_altared.m3u8
+
+
+
+
+
+
+
+
+
+
